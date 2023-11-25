@@ -1,0 +1,163 @@
+body {
+  background-color: rgb(109, 44, 96);
+  margin: 2%;
+  padding: 0;
+}
+
+/* DIV AREAS */
+div#Outer {
+  display: grid;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  grid-template-rows: Auto Auto Auto Auto Auto;
+  grid-template-columns: Auto Auto Auto Auto Auto;
+  outline: 4px solid rgb(249, 164, 212);
+}
+div#headerArea {
+  grid-row: 1;
+  grid-column: 1/6;
+  background-color: #121212;
+  width: 100%;
+  outline: 3px solid rgb(255, 255, 255);
+}
+div#navBar {
+  grid-row: 2;
+  grid-column: 1/6;
+  width: 100%;
+  background-color: #121212;
+  outline: 3px solid rgb(255, 255, 255);
+}
+div#asideArea {
+  grid-row: 3/5;
+  grid-column: 1/2;
+  background-color: #121212;
+  outline: 3px solid rgb(255, 255, 255);
+}
+div#sectionArea {
+  grid-row: 3/5;
+  grid-column: 2/6;
+  background-color: #121212;
+  overflow: auto;
+  outline: 3px solid rgb(255, 255, 255);
+}
+div#footerBar {
+  grid-row: 5;
+  grid-column: 1/6;
+  background-color: #121212;
+  outline: 3px solid rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------HEADER SETUP*--------------------------------------------------*/
+div#headerArea > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------------------------------------NAV SETUP*----------------------------------------------------*/
+na > ul {
+  text-align: center;
+}
+
+nav > ul > li {
+  display: inline;
+  list-style: none;
+  font-family: Bagel Fat One, sans-serif;
+  font-size: 18pt;
+  font-weight: lighter;
+  margin: 0 5% 0 7%;
+}
+
+div > nav > ul > li > a:link {
+  color: rgb(249, 164, 212);
+  text-decoration: none;
+}
+div > nav > ul > li > a:visited {
+  color: rgb(249, 164, 212);
+  text-decoration: none;
+}
+
+div > nav > ul > li > a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*------------------------------------------------ASIDE SETUP*----------------------------------------------------*/
+div#asideArea {
+  text-align: center;
+}
+
+div#asideArea h2 {
+  padding: 0 50px 0 50px;
+  color: rgb(249, 164, 212);
+  font-size: 24pt;
+  font-family: "Lilita One", sans-serif;
+  font-weight: lighter;
+}
+
+div#asideArea img {
+  margin: 15% 15% 15% 0;
+  border: 3pt solid rgb(249, 164, 212);
+}
+
+/*----------------------------------------------SECTION SETUP*----------------------------------------------------*/
+div#sectionArea h2,
+div#sectionArea dt {
+  color: rgb(249, 164, 212);
+}
+
+.CharP {
+  text-align: center;
+}
+div#sectionArea h2 {
+  margin: 2% 0 0 5%;
+  font-size: 26pt;
+  font-weight: lighter;
+  font-family: "Lilita One", sans-serif;
+}
+
+div#sectionArea p {
+  margin: 2% 0 2% 7%;
+  width: 80%;
+  font-size: 14pt;
+  font-family: "sofia", "Lucida Sans", Geneva, Verdana, sans-serif;
+  color: white;
+}
+div#sectionArea h2 > p {
+  font-size: 18pt;
+  font-family: "sofia", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+div#sectionArea dt {
+  margin: 2% 0 2% 9%;
+  width: 80%;
+  font-size: 20pt;
+  font-family: "Lilita One", sans-serif;
+  font-weight: lighter;
+}
+
+div#sectionArea dd {
+  margin: 2% 0 2% 12%;
+  width: 80%;
+  font-size: 18pt;
+  color: white;
+  font-family: "sofia";
+}
+
+div#sectionArea li {
+  margin: 2% 0 2% 9%;
+  width: 80%;
+  font-size: 18pt;
+  font-family: "sofia";
+  color: white;
+  list-style: none;
+}
+
+/*------------------------------------------------FOOTER SETUP*----------------------------------------------------*/
+div#footerBar {
+  text-align: center;
+  font-size: x-large;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: rgb(249, 164, 212);
+}
