@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="TMBA.css" rel="styleSheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bagel Fat One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+    <title>Contact.Andy</title>
+  </head>
+  <body>
+    <div id="navBar">
+      <nav>
+        <ul>
+          <li><a href="Cakes.html">Cakes</a></li>
+          <li><a href="Seasonal.html">Seaonal</a></li>
+          <li><a href="Charcu.html">Charcuterie Boards</a></li>
+          <li><a href="Events.html">Treats</a></li>
+          <li><a href="TMBA.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section>
+      <form
+        id="Order"
+        action="mailto:thingamabobs.by.andy@gmail.com"
+        method="post"
+      >
+        <fieldset id="custInfo">
+          <legend>Customer Information</legend>
+
+          <div class="formRow">
+            <lable for="name">Name*</lable>
+            <input
+              name="custName"
+              id="name"
+              type="text"
+              placeholder="First and Last Name"
+              required
+            />
+          </div>
+
+          <div class="formRow">
+            <lable for="insta">Instagram </lable>
+            <input name="custInsta" id="insta" type="text" />
+          </div>
+
+          <div class="formRow">
+            <lable for="phone">Phone</lable>
+            <input
+              name="custPhone"
+              id="phone"
+              type="tel"
+              placeholder="nnn-nnn-nnnn"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+          </div>
+
+          <div class="formRow">
+            <lable for="mail">E-Mail*</lable>
+            <input name="custEmail" id="mail" type="email" required />
+          </div>
+          <div class="formRow">
+            <lable for="info"
+              >Where did you hear about us?<br />(select all that apply)
+            </lable>
+            <select name="infoSrc" id="info" size="4" multiple>
+              <option value="internet">Instagram</option>
+              <option value="mag">Business Card</option>
+              <option value="word">Word of Mouth</option>
+              <option value="other">Other</option>
+            </select>
+            </div>
+          <label for="commBox"> Tell us about your order:</label>
+          <textarea name="custExp" id="commBox"></textarea>
+
+
+          </div>
+          <div id="buttons">
+            <input type="submit" value="Submit My Order" />
+            <input type="reset" value="Cancel" />
+          </div>
+        </div>
+
+        </fieldset>
+
+    </section>
+  </body>
+</html>

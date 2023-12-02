@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 body {
   background-color: rgb(109, 44, 96);
   margin: 2%;
@@ -7,6 +10,7 @@ body {
 /* DIV AREAS */
 div#Outer {
   display: grid;
+  width: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
   grid-template-rows: Auto Auto Auto Auto Auto;
@@ -37,11 +41,10 @@ div#sectionArea {
   grid-row: 3/5;
   grid-column: 2/6;
   background-color: #121212;
-  overflow: auto;
   outline: 3px solid rgb(255, 255, 255);
 }
 div#footerBar {
-  grid-row: 5;
+  grid-row: 6;
   grid-column: 1/6;
   background-color: #121212;
   outline: 3px solid rgb(255, 255, 255);
@@ -55,7 +58,7 @@ div#headerArea > img {
 }
 
 /*----------------------------------------------------NAV SETUP*----------------------------------------------------*/
-na > ul {
+nav > ul {
   text-align: center;
 }
 
@@ -65,7 +68,7 @@ nav > ul > li {
   font-family: Bagel Fat One, sans-serif;
   font-size: 18pt;
   font-weight: lighter;
-  margin: 0 5% 0 7%;
+  margin: 0 2% 0 2%;
 }
 
 div > nav > ul > li > a:link {
@@ -96,8 +99,12 @@ div#asideArea h2 {
 }
 
 div#asideArea img {
-  margin: 15% 15% 15% 0;
   border: 3pt solid rgb(249, 164, 212);
+  text-align: center;
+  margin-bottom: 5%;
+  margin-right: 65px;
+  width: 100%;
+  height: auto;
 }
 
 /*----------------------------------------------SECTION SETUP*----------------------------------------------------*/
@@ -109,6 +116,16 @@ div#sectionArea dt {
 .CharP {
   text-align: center;
 }
+
+div#sectionArea h1 {
+  text-align: center;
+  color: rgb(249, 164, 212);
+  font-size: 26pt;
+  font-weight: lighter;
+  font-family: "Lilita One", sans-serif;
+  text-decoration: underline;
+}
+
 div#sectionArea h2 {
   margin: 2% 0 0 5%;
   font-size: 26pt;
@@ -152,6 +169,10 @@ div#sectionArea li {
   color: white;
   list-style: none;
 }
+div#sectionArea h2.linkerz {
+  border: 4px double pink;
+  width: fit-content;
+}
 
 /*------------------------------------------------FOOTER SETUP*----------------------------------------------------*/
 div#footerBar {
@@ -160,4 +181,74 @@ div#footerBar {
   padding-top: 1%;
   padding-bottom: 1%;
   color: rgb(249, 164, 212);
+}
+
+/*-----------------------------------MEDIA MOBILE PHONE----------------------------------------------------------*/
+
+/*-----------------------------------------Gallery SETTINGS-----------------------------------------------------------*/
+
+div.gallery {
+  margin: 15% 15% 15% 15%;
+}
+
+div.desc {
+  padding: 2px 0 0 0;
+  color: white;
+}
+
+/*-----------------------------------------FORM SETTINGS-----------------------------------------------------------*/
+form#Order {
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+  align-content: center;
+  justify-content: center;
+}
+
+form#Order > fieldset {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+div.formRow {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 7px 0px;
+}
+div.formRow > * {
+  flex: 1 1 10px;
+}
+
+input {
+  font-size: 1em;
+}
+select > option {
+  font-size: 1.2em;
+}
+/* Legend Styles */
+legend {
+  background-color: rgb(0, 0, 0);
+  color: rgb(249, 164, 212);
+  border: 2px solid rgb(249, 164, 212);
+  padding: 5px;
+}
+/* Text Area Styles */
+textarea {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+  font-size: 1em;
+}
+
+/* Form Button Styles */
+div#buttons {
+  text-align: center;
+  width: 100%;
+}
+input[type="submit"],
+input[type="reset"] {
+  font-size: 1em;
+  padding: 5px;
+  margin: 15px;
 }
